@@ -18,7 +18,7 @@ CHIP A6Q2201852257 {
     And = (a=a, b=~b, c=c, d=d, out=t5)     // (a ∧ ¬b ∧ c ∧ d)
     And = (a=a, b=b, c=c, d=~d, out=t6)     // (a ∧ b ∧ c ∧ ¬d)
 
-    Or = (a, b, c, d, e, f, out=f)
+    Or = (a=t1, b=t2, c=t3, d=t4, e=t5, f=t6, out=f)
 
 
 }
