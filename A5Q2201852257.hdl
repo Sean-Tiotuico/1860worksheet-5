@@ -8,4 +8,4 @@ CHIP A5Q2201852257{
     Or (a = V, b = notH, out = orVH);
     Or (a=orVH, b=andHV, out = ororand);
     And (a = ororand, b=J, out = U);
-    }
+}
