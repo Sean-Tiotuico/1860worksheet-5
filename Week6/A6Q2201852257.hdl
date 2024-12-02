@@ -15,5 +15,7 @@ CHIP A6Q2201852257{
     And (a=a, b=notb, c=c, d=d, out=t5);
     And (a=a, b=b, c=c, d=notd, out=t6);
 
-    Or (a=t1, b=t2, c=t3, d=t4, e=t5, f=t6, out=f);
+    Or (a=t1, b=t2, c=t3, d=t4, out=o1);
+    Or (a=t5, b=t6, out=o2);
+    Or (a=o1, b=o2, out=f);
 }
