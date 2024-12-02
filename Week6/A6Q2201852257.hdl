@@ -1,4 +1,3 @@
-
 CHIP A6Q2201852257{
     IN a, b, c, d;
     OUT f;
@@ -9,12 +8,12 @@ CHIP A6Q2201852257{
     Not (in = c, out = notc);
     Not (in = d, out = notd);
 
-    And = (a=nota, b=notb, c=notc, d=notd, out=t1);
-    And = (a=nota, b=notb, c=c, d=d, out=t2);
-    And = (a=nota, b=b, c=notc, d=notd, out=t3);
-    And = (a=a, b=notb, c=notc, d=notd, out=t4);
-    And = (a=a, b=notb, c=c, d=d, out=t5);
-    And = (a=a, b=b, c=c, d=notd, out=t6);
+    And (a=nota, b=notb, c=notc, d=notd, out=t1);
+    And(a=nota, b=notb, c=c, d=d, out=t2);
+    And (a=nota, b=b, c=notc, d=notd, out=t3);
+    And (a=a, b=notb, c=notc, d=notd, out=t4);
+    And (a=a, b=notb, c=c, d=d, out=t5);
+    And (a=a, b=b, c=c, d=notd, out=t6);
 
-    Or = (a=t1, b=t2, c=t3, d=t4, e=t5, f=t6, out=f);
+    Or (a=t1, b=t2, c=t3, d=t4, e=t5, f=t6, out=f);
 }
