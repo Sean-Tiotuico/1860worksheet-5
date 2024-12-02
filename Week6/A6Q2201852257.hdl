@@ -11,7 +11,7 @@ CHIP A6Q2201852257 {
     Not (c=~c)
     Not (d=~d)
 
-    And (a=~a, b=~b, c=~c, d=~d, out=t1)    // (¬a ∧ ¬b ∧ ¬c ∧ ¬d)
+    And = (a=~a, b=~b, c=~c, d=~d, out=t1)    // (¬a ∧ ¬b ∧ ¬c ∧ ¬d)
     And = (a=~a, b=~b, c=c, d=d, out=t2)    // (¬a ∧ ¬b ∧ c ∧ d)
     And = (a=~a, b=b, c=~c, d=~d, out=t3)   // (¬a ∧ b ∧ ¬c ∧ ¬d)
     And = (a=a, b=~b, c=~c, d=~d, out=t4)   // (a ∧ ¬b ∧ ¬c ∧ ¬d)
